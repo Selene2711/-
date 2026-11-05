@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHIZEN · 石桢 个人作品集</title>
+  <meta name="creative-medium" content="interactive-prototype" />
+  <meta name="description" content="石桢 Shi Zhen - 视觉传达设计个人作品集，洞洞板钥匙扣挂件交互概念" />
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <!-- React & Babel -->
+  <link rel="preload" as="script" href="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/miaoda/coding-unpkg-sdk/react@18.3.1/umd/react.production.min.js" />
+  <link rel="preload" as="script" href="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/miaoda/coding-unpkg-sdk/react-dom@18.3.1/umd/react-dom.production.min.js" />
+  <link rel="preload" as="script" href="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/miaoda/coding-unpkg-sdk/@babel/standalone@7.29.0/babel.min.js" />
+
+  <!-- Styles -->
+  <link rel="preload" as="style" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Preload JSX components -->
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="tweaks-panel.jsx" />
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="components/App.jsx" />
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="components/Pegboard.jsx" />
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="components/Modals.jsx" />
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="components/HomePage.jsx" />
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="components/WorksPage.jsx" />
+  <link rel="preload" as="fetch" crossorigin="anonymous" href="components/ContactPage.jsx" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/miaoda/coding-unpkg-sdk/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/miaoda/coding-unpkg-sdk/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://sf3-scmcdn-cn.feishucdn.com/obj/feishu-static/miaoda/coding-unpkg-sdk/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+  <!-- Tweak defaults (must be before component scripts) -->
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "accentColor": "#C67B5C",
+      "pegboardWarmth": 1,
+      "swayAmount": 1,
+      "motionEnabled": true
+    }/*EDITMODE-END*/;
+  </script>
+
+  <!-- Components -->
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="components/Pegboard.jsx"></script>
+  <script type="text/babel" src="components/Modals.jsx"></script>
+  <script type="text/babel" src="components/HomePage.jsx"></script>
+  <script type="text/babel" src="components/WorksPage.jsx"></script>
+  <script type="text/babel" src="components/ContactPage.jsx"></script>
+  <script type="text/babel" src="components/App.jsx"></script>
+</body>
+</html>
